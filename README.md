@@ -1,19 +1,72 @@
-# Neeric - AWS Cloud Waste Scanner
+# Neeric - Stop Wasting Money on AWS
 
-![Neeric Logo](https://img.shields.io/badge/Neeric-AWS%20Cleaner-green?style=for-the-badge)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Y Combinator](https://img.shields.io/badge/Y%20Combinator-W25-orange)](https://www.ycombinator.com)
+Hey there! 👋 Welcome to **Neeric** — the tool that helps you find and clean up AWS cloud waste, so you can stop overpaying for stuff you don't use.
 
-Your AWS bills are too damn high. Neeric finds and cleans up cloud waste to reduce your costs.
+---
 
-## 🚀 Features
+## 🚦 Why Neeric?
 
-- **Smart Waste Detection**: Finds actual waste, not just "idle" resources
-- **Multi-Service Support**: Scans EC2, RDS, S3, ELB, Lambda, and more
-- **Safety First**: Read-only by default, requires explicit approval for changes
-- **Web Dashboard**: Modern, responsive interface for detailed analysis
-- **CLI Tool**: Command-line interface for automation and scripting
-- **Real-time Scanning**: Live AWS integration with proper error handling
+- **AWS bills too high?** You're not alone. Most teams pay for things they forgot about.
+- **Neeric finds real waste** (not just idle stuff) and shows you exactly what's safe to clean up.
+- **You're always in control:** Nothing gets deleted unless you say so.
+- **Works for everyone:** Use the web dashboard, the CLI, or both!
+
+---
+
+## 🧑‍💻 What is Neeric (in one line)?
+
+> Neeric scans your AWS account, finds unused resources, and helps you clean them up safely — saving you real money every month.
+
+---
+
+## ✨ How it feels to use Neeric
+
+1. **Start the dashboard** (or CLI)
+2. **Connect your AWS account** (read-only is fine)
+3. **Hit scan** — see a list of waste, with cost and risk
+4. **Pick what to clean up** (or just preview)
+5. **Smile as your AWS bill goes down!**
+
+---
+
+## 🚀 Quick Start (for Humans)
+
+### The Easy Way: Web Dashboard
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+2. **Start the dashboard:**
+   ```bash
+   npm run dev
+   ```
+3. **Open your browser:** Go to [http://localhost:5174/dashboard](http://localhost:5174/dashboard)
+4. **Connect AWS:** Enter your credentials (read-only is safest)
+5. **Scan & Clean:** See what's wasting money, and approve what you want to clean up
+
+### Prefer the Command Line?
+
+1. **Install globally (optional):**
+   ```bash
+   npm install -g .
+   ```
+2. **Set up credentials:**
+   ```bash
+   neeric init
+   ```
+3. **Scan for waste:**
+   ```bash
+   neeric scan --region us-east-1
+   ```
+4. **Preview cleanup:**
+   ```bash
+   neeric cleanup --dry-run
+   ```
+5. **Actually clean up:**
+   ```bash
+   neeric cleanup
+   ```
 
 ## 🎯 What We Find
 
