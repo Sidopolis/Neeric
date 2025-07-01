@@ -1,0 +1,72 @@
+{
+  "name": "neeric",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AWS cloud waste scanner and cleanup tool",
+  "bin": {
+    "neeric": "./cli.js"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "cli": "node cli.js"
+  },
+  "keywords": [
+    "aws",
+    "cloud",
+    "cost-optimization",
+    "devops",
+    "cli"
+  ],
+  "author": "Neeric Team",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-cloudtrail": "^3.830.0",
+    "@aws-sdk/client-cloudwatch": "^3.719.0",
+    "@aws-sdk/client-config-service": "^3.830.0",
+    "@aws-sdk/client-ec2": "^3.719.0",
+    "@aws-sdk/client-elastic-load-balancing-v2": "^3.719.0",
+    "@aws-sdk/client-lambda": "^3.719.0",
+    "@aws-sdk/client-rds": "^3.719.0",
+    "@aws-sdk/client-s3": "^3.719.0",
+    "@aws-sdk/credential-providers": "^3.719.0",
+    "@react-three/drei": "^9.77.11",
+    "@react-three/fiber": "^8.13.7",
+    "@react-three/rapier": "^1.5.0",
+    "@types/uuid": "^10.0.0",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^12.1.0",
+    "framer-motion": "^12.19.4",
+    "gsap": "^3.13.0",
+    "inquirer": "^8.2.6",
+    "lucide-react": "^0.344.0",
+    "meshline": "^3.3.1",
+    "ora": "^5.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.6.2",
+    "three": "^0.143.0",
+    "uuid": "^11.0.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@types/three": "^0.177.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^9.9.1",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.11",
+    "globals": "^15.9.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.3.0",
+    "vite": "^5.4.2"
+  }
+}
